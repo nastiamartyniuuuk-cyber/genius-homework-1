@@ -39,8 +39,13 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-/* Body */
+/* Base */
+* {
+  box-sizing: border-box;
+}
 
 body {
   color: var(--color-primary-dark);
@@ -48,12 +53,40 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 address {
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.section {
+  padding: 48px 0;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 /* Button */
 .button {
+  padding: 16px 32px;
   background-color: var(--color-brand-light);
   font-weight: 600;
   color: var(--color-primary-light);
@@ -77,8 +110,12 @@ address {
   color: var(--color-brand-light);
   font-weight: 600;
 }
-/* Hero Title */
+/* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -112,8 +149,18 @@ address {
 .chefs-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
+}
+.chef-title {
+  margin-bottom: 80px;
 }
 /* Tradition */
+.traditions-title {
+  margin-bottom: 42px;
+}
+.tradition-section {
+  padding-top: 96px;
+}
 
 .tradition-text span.brand-uppercase {
   color: var(--color-brand-light);
@@ -132,6 +179,13 @@ address {
 .format-text p {
   font-weight: 300;
   font-size: 14px;
+}
+.formats-title {
+  margin-bottom: 80px;
+}
+/* Contact section */
+.contacts-title {
+  margin-bottom: 16px;
 }
 
 /* footer section */
